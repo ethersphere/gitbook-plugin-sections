@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-sections",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "description": "GitBook plugin that allows you to display only selected sections of the page",
   "engines": {

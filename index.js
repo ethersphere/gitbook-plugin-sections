@@ -16,6 +16,7 @@ module.exports = {
   hooks: {
     "page:before": function(page) {
       sectionids = [];
+      return page;
     },
     "page": function(page) {
       page.sections.forEach(function(section) {
