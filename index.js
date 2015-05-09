@@ -14,6 +14,9 @@ module.exports = {
     }
   },
   hooks: {
+    "page:before": function(page) {
+      sectionids = [];
+    },
     "page": function(page) {
       page.sections.forEach(function(section) {
         if (section.type == "normal") {
