@@ -1,0 +1,19 @@
+{
+  "name": "gitbook-plugin-sections",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "GitBook plugin that allows you to display only selected sections of the page",
+  "engines": {
+    "gitbook": ">=2.0.0"
+  },
+  "homepage": "https://github.com/ethersphere/gitbook-plugin-sections",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethersphere/gitbook-plugin-sections.git"
+  },
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/ethersphere/gitbook-plugin-sections/issues"
+  },
+  "dependencies": {}
+}
