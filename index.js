@@ -36,7 +36,7 @@ module.exports = {
               if (match != null && match.length > 1) {
                 thisdepth = match[1];
                 idtag = match[2].trim();
-                if (thisdepth < depth) {
+                if (thisdepth > depth) {
                   if (add) { content += chunk; }
                 } else {
                   depth = thisdepth;
