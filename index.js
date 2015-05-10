@@ -36,17 +36,18 @@ module.exports = {
               if (match != null && match.length > 1) {
                 thisdepth = match[1];
                 idtag = match[2].trim();
-                if (thisdepth > depth) {
-                  if (add) { content += chunk; }
+                if (add && thisdepth > depth) {
+                  content += chunk;
                 } else {
-                  depth = thisdepth;
                   ids = hre.exec(idtag);
                   id = '';
                   if (ids != null && ids.length > 0) { id = ids[1]; }
                   if (sectionids.filter(function(i){return i == id}).length > 0) {
                     add = true;
+                    depth = thisdepth;
                     content += chunk;
                   } else {
+                    depth = 0;
                     add = false;
                   }
                 }
